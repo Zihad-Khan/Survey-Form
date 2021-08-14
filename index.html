@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<title>Servey form </title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style(sf).css">
+</head>
+<body>
+<div id="title">
+<h1 class="theader">CULTURAL CLUB </h1>
+<p id="description">Welcome to our survey form. Please submit your
+information properly for further benefit.
+</p>
+</div>
+<div id="form">
+    <div id="fdiv" >
+<form id="survey-form">
+    <h2 style="text-align:center; margin:10px">Input Here</h2>
+<label for="name" id="name-label">Name:</label>
+<br>
+<input type="text" id="name" class="inputf" name="name"value="" placeholder="Your name here..." required>
+<br>
+<label for="email" id="email-label">Email :</label>
+<br>
+<input type="email" id="email" class="inputf" name="e-mail" value="" placeholder="...@mail.com" pattern="[a-z\0-9\\@\a-z\.\a-z]" required>
+<br>
+<br>
+<label for="number" id="number-label">Enter your CC-Number:</label>
+<br>
+<input type="number" id="number" class="inputf" required placeholder="Your CC-Number here..." min="200100" max="400100" pattern="[0-9](6)">
+<br>
+<br>
+<label for="mobile">Mobile:</label>
+<br>
+<input type="text" id="mobile" class="inputf" name="mobile" pattern="[0-1]{2}[3-9]{1}[0-9]{8}" placeholder="01..." required title="Please enter your correct Bangladeshi standerd formed number within 11 characters.">
+<br>
+<br>
+<label for="date">Your birth date(optional):</label>
+<br>
+<input type="date" id="date" class="inputf" name="b-date">
+<br>
+<br>
+<fieldset>
+<legend><b>Our activities</b></legend>
+<h3 class="flabel">Which part of our activity you like more.</h3>
+<br>
+<input type="radio" id="lb" name="activity" value="Library">
+<label for="ln" class="radioposi">Library</label>
+<br>
+<input type="radio" id="mq" name="activity" value="Maqtab" checked>
+<label for="mq"class="radioposi">Maqtab</label>
+<br>
+<input type="radio" id="fn" name="activity" value="Fitness">
+<label for="fn" class="radioposi">Fitness</label>
+<br>
+<input type="radio" id="ot" name="activity" value="Other">
+<label for="ot" class="radioposi">Other</label>
+<br>
+</fieldset>
+<br>
+<label for="dropdown">Select your position.</label>
+<br>
+<select id="dropdown" class="inputf" name="position" placeholder="Your position...">
+<option value"Member">Member</option>
+<option value="Secretary">Secretary</option>
+<option value="President">President</option>
+</select>
+<br>
+<fieldset>
+<legend><b>Choose what you like to do</b></legend>
+<h3 class="flabel">Select what you like to do</h3>
+<br>
+<input type="checkbox" id="cr" name="choice" value="Cricket">
+<label for="cr"> Playing Cricket </label><br>
+<input type="checkbox" id="ft" name="choice" value="Football">
+<label for="ft">Playing Football</label><br>
+<input type="checkbox" id="chess" name="choice" value="Chess">
+<label for="chase">Playing Chess</label><br>
+<input type="checkbox" id="rb" name="choice" value="R.Book">
+<label for="rb">Reading Book </label><br>
+<input type="checkbox" id="wr" name="choice" value="Writing">
+<label for="wr">Writing </label><br>
+<input type="checkbox" id="rq" name="choice" value="R.Quran">
+<label for="rq">Resiting Quran</label><br>
+</fieldset>
+<label for="tarea">Add your valuable suggestion: </label><br>
+<textarea id="tarea" name="suggetion" placeholder="Add suggestion...">
+</textarea>
+<br>
+<input type="submit" id="submit" name="submit" value="Submit">
+<br>
+</form>
+</div>
+</div>
+</body>
+</html>
+
